@@ -15,7 +15,7 @@ const UserTable = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('https://localhost:7226/user');
+        const response = await axios.get('http://localhost:5004/user');
         setUsers(response.data);
       } catch (error) {
         setError('Failed to fetch users');
@@ -37,7 +37,7 @@ const UserTable = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://localhost:7226/user', newUser);
+      const response = await axios.post('https://localhost:5004/user', newUser);
       setUsers([...users, response.data]);
       setNewUser({ username: '', email: '', passwordHash: '' });
     } catch (error) {

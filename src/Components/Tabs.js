@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Tabs.css'; // Ensure this path is correct
 import UserTable from './UserTable'; // Import UserTable from src
+import Products from './Products';
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState('products');
@@ -41,13 +42,6 @@ const Tabs = () => {
     </div>
   );
 };
-
-const Products = () => (
-  <div>
-    <h3>Products Content</h3>
-    {/* List of products */}
-  </div>
-);
 
 const Cart = () => (
   <div>
