@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SUgav9fpQWOp0Gx8cSi+fRYngVxpcvlTi/viXrMK6SqKs6tbLV0Ai0swINiiuHP8reqpM2djn7gUL6qihwX+VA==",
+  "dgSpecHash": "c/o1ruT3wszwRZllLF/shpR1tO9WFXpfZyAZjvN8NEKVveyI6CnIpzqV+pCfqewuDhYGxB74H9+aevx1GuugmA==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\UserService\\UserService.csproj",
+  "projectFilePath": "E:\\Projects\\E-Commerce-site\\backend\\UserService\\UserService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.8\\microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
