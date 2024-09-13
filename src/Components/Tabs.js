@@ -2,12 +2,17 @@ import React, { useState } from 'react';
 import './Tabs.css'; // Ensure this path is correct
 import UserTable from './UserTable'; // Import UserTable from src
 import Products from './Products';
+import Cart from './Cart';
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState('products');
+  const [cart, setCart] = useState([]);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
+  };
+  const handleAddToCart = (product) => {
+    setCart((prevCart) => [...prevCart, product]);
   };
 
   return (
@@ -35,19 +40,13 @@ const Tabs = () => {
         </div>
       </div>
       <div className="tab-content">
-        {activeTab === 'products' && <Products />}
-        {activeTab === 'cart' && <Cart />}
+        {activeTab === 'products' && <Products onAddToCart ={handleAddToCart}/>}
+        {activeTab === 'cart' && <Cart items={cart} />}
         {activeTab === 'user' && <UserTable />} {/* Render UserTable when 'user' tab is active */}
       </div>
     </div>
   );
 };
 
-const Cart = () => (
-  <div>
-    <h3>Cart Content</h3>
-    {/* Cart details */}
-  </div>
-);
 
 export default Tabs;

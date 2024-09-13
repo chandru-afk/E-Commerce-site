@@ -37,7 +37,7 @@ const UserTable = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://localhost:5004/user', newUser);
+      const response = await axios.post('http://localhost:5004/user', newUser);
       setUsers([...users, response.data]);
       setNewUser({ username: '', email: '', passwordHash: '' });
     } catch (error) {

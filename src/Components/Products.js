@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Products = () => {
+const Products = ({ onAddToCart }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -34,6 +34,7 @@ const Products = () => {
             <th>Name</th>
             <th>Description</th>
             <th>Price</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -45,6 +46,9 @@ const Products = () => {
               <td>{product.name}</td>
               <td>{product.description}</td>
               <td>${product.price}</td>
+              <td>
+                <button onClick={() => onAddToCart(product)}>Buy</button>
+              </td>
             </tr>
           ))}
         </tbody>
