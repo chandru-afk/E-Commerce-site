@@ -1012,11 +1012,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\E-Commerce-site\\backend\\UserService\\UserService.csproj",
+      "projectUniqueName": "E:\\Projects\\E-Commerce-site\\Backend\\UserService.csproj",
       "projectName": "UserService",
-      "projectPath": "E:\\Projects\\E-Commerce-site\\backend\\UserService\\UserService.csproj",
+      "projectPath": "E:\\Projects\\E-Commerce-site\\Backend\\UserService.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\E-Commerce-site\\backend\\UserService\\obj\\",
+      "outputPath": "E:\\Projects\\E-Commerce-site\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
