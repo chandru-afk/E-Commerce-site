@@ -38,7 +38,7 @@ namespace UserService.Controllers
         {
             var users = await _context.Users.FindAsync(id);
             if(users == null) return NotFound();
-             return Ok(users);
+            return Ok(users);
         }
 
         [HttpPost]
