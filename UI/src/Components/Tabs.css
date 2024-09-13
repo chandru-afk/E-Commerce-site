@@ -1,0 +1,50 @@
+/* Container for tabs and content */
+.tabs-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between; /* Aligns tabs to the edges */
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .tabs h2 {
+    cursor: pointer;
+    padding: 15px 30px; /* Increase padding for larger tabs */
+    margin: 0;
+    font-size: 28px; /* Increase font size for larger text */
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 6px; /* Slightly larger border-radius for rounded corners */
+  }
+  
+  .right-tabs {
+    display: flex;
+  }
+  
+  .right-tabs h2 {
+    margin-left: 25px; /* Increase space between right-aligned tabs */
+    border-left: 4px solid transparent; /* Create space for the active indicator */
+  }
+  
+  .right-tabs h2.active {
+    color: blue;
+    border-left: 4px solid blue; /* Indicator for active tab */
+    font-weight: bold;
+  }
+  
+  .tabs h2:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
