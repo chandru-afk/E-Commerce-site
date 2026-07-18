@@ -29,6 +29,16 @@ namespace UserService.Controllers
             var orderedNumbers = _context.Users.OrderBy(n => n.Id);
             int count = _context.Users.Count(n => n.Id > 3);
             int sum = _context.Users.Sum(user => user.Id);
+            if (!_context.Users.Any())
+            {
+                return Ok("No users found.");
+            }
+
+            int maxid = _context.Users.Max(e => e.Id);
+
+            var recMaxid = _context.Users.Where(e => e.Id == maxid).ToList();
+
+            var secondmaxid = _context.Users.OrderByDescending(e => e.Id).Skip(1).Select(e => e.Id).FirstOrDefault();
 
             return Ok(Users);
         }
